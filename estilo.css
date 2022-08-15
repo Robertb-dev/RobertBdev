@@ -253,3 +253,17 @@ footer {
 }
 
 
+
+/*Diminuir a logo*/
+
+@media(max-width: 576px){
+  .navbar-brand{
+    font-family: 'quantum';
+      color: white;
+      font-size: 4rem;
+      font-weight: bold;
+      margin-left:5rem;
+    }
+
+}
+
