@@ -1,0 +1,270 @@
+
+
+/*===INICIO DOS ESTILOS GERAIS===*/
+
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+
+:root{
+
+--black-color: #000000;
+--white-color: #ffffff;
+--original-purple: hsl(290, 100%, 26%);
+--light-purple: #dc00db;
+--titulos-purple: #b000af;
+
+font-size: 62.5%; /*1rem = 10px */
+}
+
+/*Fonte para o navbrand*/
+@font-face{
+font-family: quantum;
+src: url(../fontes/Quantum.otf);
+}
+
+html{
+scroll-behavior: smooth;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.6rem;
+  background-color: var(--white-color);
+}
+
+.wrapper{
+    padding-inline: 2.4rem; 
+}
+
+article .wrapper{
+  margin-top: 8rem;
+  margin-bottom: 8rem;
+}
+
+section .wrapper{
+  margin-top: 8rem;
+  margin-bottom: 10rem;
+}
+
+footer .wrapper{
+  height: 15rem;
+}
+
+
+ul{
+    list-style: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+text-decoration: none;
+}
+
+/*===FIM DOS ESTILOS GERAIS===*/
+
+/*Estilização das fontes*/
+
+
+h1,
+h2,
+h5,
+a {
+    font-family: 'ubuntu';
+}
+
+
+h2, h5 {
+    font-size: 3rem;
+    color: var(--titulos-purple);
+}
+
+.container h2{
+  font-size: 2.5rem;
+  color: var(--titulos-purple);
+}
+
+p {
+  font-family: 'ubuntu';
+  font-size: 1.2em;
+  color: black;
+  text-indent: 1.5em;
+  text-align: justify;
+}
+
+li {
+    font-family: 'ubuntu';
+    font-size: 1.1em;
+}
+
+
+
+/*INICIO DA AREA HEADER 
+
+
+/*===Area navegação e de menu===*/
+
+ #header{
+    height: 13rem;
+    background: var(--original-purple);
+  }
+
+.navbar-brand{
+  font-family: 'quantum';
+    color: white;
+    font-size: 5rem;
+    font-weight: bold;
+    margin-left:5rem;
+  }
+
+  /*
+.navbar-brand a:hover{
+    color: white;
+  }*/
+
+#header button{
+  border: solid 2px black;
+  margin-right: 3rem;
+  margin-top: 3.5rem;
+  }
+
+ #header a:hover{
+    color: white;
+  }
+  
+  .nav-link{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-right: 2rem;
+  }
+
+ .navbar-nav{
+  background: var(--original-purple);
+  text-align: right;
+ }
+
+  
+/*===FIM DA AREA HEADER===*/
+
+
+/*===Sessão Sobre eu===*/
+
+
+
+.textoeu {
+    padding-top: 30px;
+}
+
+.central {
+    width: auto;
+    height: 450px;
+}
+
+.imagemeu {
+    width: 250px;
+    height: 300px;
+    margin-bottom: 5rem;
+
+}
+
+
+/*===Seção Portifólio===*/
+
+.curriculo{
+margin-top: 4rem;
+margin-bottom: 4rem;
+}
+.container{
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#portfolio button{
+  width: 12rem;
+  height: 4rem;
+
+}
+
+#portfolio button a{
+  font-size: 1.5rem;
+  color: black;
+}
+
+#portfolio button a:hover{
+  color: var(--white-color);
+}
+
+#portfolio .card{
+margin-bottom: 6rem;
+}
+#portfolio .btn{
+
+  color: var(--white-color);
+  background-color: var(--titulos-purple);
+  
+}
+
+#portfolio .btn:hover{
+  color: var(--white-color);
+}
+
+#portfolio .card-text{
+text-align: justify;
+}
+
+
+/*===Area rodapé=== */
+
+footer {
+  background-color: var(--original-purple);
+}
+
+#rodape h2{
+  color: var(--white-color);
+}
+#rodape {
+  padding-top: 30px;
+  padding-bottom: 80px;
+  color: var(--white-color);
+}
+
+#rodape ul li{
+  text-indent: -2.3rem;
+   margin-top: 1.5rem;
+}
+
+#rodape ul li a{
+  color: var(--white-color);
+ 
+}
+
+
+
+/*Diminuir a logo*/
+
+@media(max-width: 576px){
+  .navbar-brand{
+    font-family: 'quantum';
+      color: white;
+      font-size: 4rem;
+      font-weight: bold;
+      margin-left:5rem;
+    }
+
+}
+
